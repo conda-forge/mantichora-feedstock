@@ -1,5 +1,5 @@
 {% set name = "mantichora" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ffd02503e06d23b1a700bf4350d9b0894cefa4556bd5b6f952abb25b79a89012
+  sha256: c250225b960d14993b39c3b13b6a53e8cd4c5ec026ae59e0bb150769b08fc9d8
 
 build:
   noarch: python
