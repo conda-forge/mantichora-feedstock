@@ -1,5 +1,5 @@
 {% set name = "mantichora" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65a6cb15948e59656561d92ef365a3ea7d82888634b351699c552821ac7ff656
+  sha256: a421ba79c920e528b1219ed915220643002421148f7b3742a98f215c63ea2fad
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A simple interface to multiprocessing'
+  summary: A simple interface to multiprocessing
   description: |
     Mantichora provides a simple interface to multiprocessing. You can
     simply give Mantichora as many functions as you need to run.
